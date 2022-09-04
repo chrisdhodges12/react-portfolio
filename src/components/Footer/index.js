@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer () {
     return (
-        <div>FOOTER</div>
+        <div>Developed by Chris Hodges &copy; 2022 </div>
     )
 }
 

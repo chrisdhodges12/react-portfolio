@@ -32,9 +32,9 @@ function App() {
   return (
     <div>
       <Header thisPage={thisPage} handlePage={handlePage}/>
-        <div>
+        <main>
           <CurrentSelection />
-        </div>
+        </main>
       <Footer />
     </div>
   );

@@ -14,10 +14,11 @@ function Header({ thisPage, handlePage }) {
         <ul>
           {pages.map(page => {
             return (
-              <li className="links" key={page}>
-               <a href={`#${page}`}
+              <li className="nav-links" key={page}>
+               <a href={`#${page.toLowerCase()}`}
                     onClick={() => handlePage(page)}
-                    className={thisPage === page ? 'nav-link active' : 'nav-link'} >
+                    // className={thisPage === page ? 'nav-link active' : 'nav-link'} 
+                    >
                     {page}
                 </a>
               </li>
