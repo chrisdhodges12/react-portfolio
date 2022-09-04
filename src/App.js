@@ -9,20 +9,21 @@ import Resume from './components/Resume';
 
 function App() {
 
-  const [thisPage, setThisPage] = useState('About');
 
-  const  CurrentSelection = () => {
+  const [thisPage, setThisPage] = useState("About");
+
+  const CurrentSelection = () => {
     if (thisPage === 'About' ) {
-      return <About />
+      return <About />;
     }
     if (thisPage === "Projects") {
-      return <Projects />
+      return <Projects />;
     }
     if (thisPage === "Contact") {
-      return <Contact />
+      return <Contact />;
     }
     if (thisPage === "Resume") {
-      return <Resume />
+      return <Resume />;
     }
   };
 
@@ -30,10 +31,10 @@ function App() {
 
   return (
     <div>
-      <Header thisPage ={thisPage} handlePage={handlePage} />
-      <main>
-        <CurrentSelection />
-      </main>
+      <Header thisPage={thisPage} handlePage={handlePage}/>
+        <div>
+          <CurrentSelection />
+        </div>
       <Footer />
     </div>
   );
