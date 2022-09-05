@@ -2,29 +2,90 @@
   --primary-color: #404E4D;
   --secondary-color: #63595C;
   --tertiary-color: #646881;
-  --quarternary-color: #62BEC1;
+  --quarternary-color: #569ac7;
   --quintinary-color: #5AD2F4;
 }
 
 /*browser styling*/
 * {
-  margin: .1rem;
-  padding: .1rem;
-  scroll-behavior: smooth;
+  margin: 0rem;
+  padding: 0rem;
   background-color: var(--primary-color);
+  color: var(--quarternary-color);
+}
+
+.main-page {
+  margin: 2rem;
+}
+
+
+footer {
+  margin-top: 20vh;
+}
+
+
+.header-name {
+  margin: 0.5rem;
+
+}
+
+.nav-links {
+
+  display: inline-block;
+  margin: 1rem;
+}
+
+.nav-list {
+  display: inline-block;
+  justify-content: space-evenly;
+  margin: 5% 0
+
+
+}
+
+.nav-link-active {
+  color: var(--quintinary-color);
+}
+
+.nav-link-active:hover {
+  color: var(--quintinary-color)
+
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.avatar {
+ border-radius: 20%;
+ max-width: 40%;
+ height: auto;
+ margin-bottom: 3rem;
+
+}
+
+.contact-link {
+  color: var(--quintinary-color);
+}
+
+.submit-btn {
+  background-color: var(--tertiary-color);
+  font-size: 1.3rem;
+}
+
+.submit-btn:hover {
+  background-color: #63595C;
 }
 
 .project-card {
   background-color: var(--quartinary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+
 }
 
 .project-body {
-  display: block;
-  align-content: center;
-  justify-content: center;
   background-color: var(--tertiary-color);
 }
 
@@ -42,4 +103,17 @@
   justify-content: center;
   align-content: space-between;
 }
+
+.project-link {
+  color: var(--quintinary-color)
+}
+
+.resume-link {
+  color: var(--quintinary-color)
+}
+
+.resume-link:hover { 
+  color: var(--quarternary-color);
+}
+
 

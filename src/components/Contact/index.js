@@ -36,37 +36,48 @@ function Contact() {
 
 
   return (
-    <section>
-      <h1>Contact me</h1>
-      <p>Fill out the form below or send me an email at{" "}
-        <a
-            href="mailto: chrisdhodges12@gmail.com" target='_blank' rel="noreferrer" >
-            chrisdhodges12@gmail.com {""}
-        </a>
-        .  You can find me on GitHub at {" "}
-        <a href="https://github.com/chrisdhodges12" target="_blank" rel="noreferrer">
-            github.com/chrisdhodges12
-        </a> {" "}.
-      </p>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+    <section className="">
+      <h1 className="d-flex justify-content-center">Contact me</h1>
+      <div>
+        <p className="">Fill out the form below or send me an email at {" "}
+          <a
+              className="contact-link"
+              href="mailto: chrisdhodges12@gmail.com" target='_blank' rel="noreferrer" >
+             chrisdhodges12@gmail.com {" "}
+          </a>
+        </p>
+        <p className="">
+          You can also find me on GitHub at {" "}
+          <a
+              className="contact-link"
+              href="https://github.com/chrisdhodges12" 
+              target="_blank" rel="noreferrer">
+              github.com/chrisdhodges12
+          </a> {" "}
+        </p>
+      </div>
+      <form className="card col-md-6 col-sm-8 d-flex " onSubmit={handleSubmit}>
+        <div className="card-body d-flex justify-content-end">
+          <label className="m-auto" htmlFor="name">Name:</label>
+          <br></br>
+          <input className="m-2" type="text" name="Name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        <div className="card-body d-flex justify-content-end">
+          <label className="m-auto" htmlFor="email">Email address:</label>
+          <br></br>
+          <input className="m-2" type="email" name="Email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+        <div className="card-body d-flex justify-content-end">
+          <label className="m-auto" htmlFor="message">Message: </label>
+          <br></br>
+          <textarea className="m-2" type="text" name="Message" rows="3" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
             <div>
-                <p className="error-text">{errorMessage}</p>
+                <p className="error-text m-3 text-warning d-flex justify-content-center">{errorMessage}</p>
             </div>
         )}
-        <button data-testid="button"  type="submit">Submit</button>
+        <button className=" card-body submit-btn" type="submit">Submit</button>
       </form>
     </section>
   );

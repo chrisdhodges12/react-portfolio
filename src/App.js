@@ -30,7 +30,7 @@ function App() {
   const handlePage = (page) => setThisPage(page);
 
   return (
-    <div>
+    <div className='main-page'>
       <Header thisPage={thisPage} handlePage={handlePage}/>
         <main>
           <CurrentSelection />

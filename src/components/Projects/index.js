@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 
+
 function Projects() {
   const project = [
     {
@@ -50,19 +51,21 @@ function Projects() {
   ];
 
   return (
-    <div>
-      <h2> My Portfolio</h2>
-      <div className="d-flex flex-wrap justify-content-lg-between justify-content-md-center justify-content-sm-center container">
+    <div className=" text-center">
+      <h2 className="mb-5"> My Portfolio</h2>
+      <div className="d-flex flex-wrap justify-content-between container">
         {project.map((project) => (
-          <Card key={project.name} className="project-card col-sm-12 col-md-3 col-lg-4  " >
-            <Card.Body className="project-body">
-              <Card.Title className="project-title">{project.title}</Card.Title>
-              <Card.Img className="project-image"  src={project.src} />
-              <Card.Text className="project-text">{project.description}</Card.Text>
-              <a href={project.github} target="_blank" rel="noreferrer" className="project-github">
+          <Card key={project.name} className="card d-flex col-sm-12 col-md-6 col-lg-4 mb-5 mb-sm-5 mb-md-0">
+            <Card.Body className="card-body">
+              <Card.Title className="card-title">{project.title}</Card.Title>
+              <div className="align-center">
+                <Card.Img className="project-image img-fluid mb-3"  src={project.src} />
+              </div>
+              <Card.Text className="project-text mb-3">{project.description}</Card.Text>
+              <a href={project.github} target="_blank" rel="noreferrer" className="project-github project-link">
                 GitHub Repo
               </a>{"   "}
-              <a href={project.deployed} target="_blank" rel="noreferrer" className="project-deployed">
+              <a href={project.deployed} target="_blank" rel="noreferrer" className="project-deployed project-link">
                 See it in action!
               </a>
             </Card.Body>
