@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.92e6415b.css",
-    "main.js": "/react-portfolio/static/js/main.0e15d92d.js",
+    "main.css": "/react-portfolio/static/css/main.fdbb3d3d.css",
+    "main.js": "/react-portfolio/static/js/main.2bb43ea2.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/travel-size.png": "/react-portfolio/static/media/travel-size.508c217eda87d42ced78.png",
+    "static/media/mypic.jpg": "/react-portfolio/static/media/mypic.26d4ae48571bc0c32d5b.jpg",
     "static/media/whats-for-dinner.png": "/react-portfolio/static/media/whats-for-dinner.9210286f1519fadf68b8.png",
     "static/media/budget-tracker.png": "/react-portfolio/static/media/budget-tracker.b57221e6f5abbf496408.png",
     "static/media/tech-blog.png": "/react-portfolio/static/media/tech-blog.c8b8660809f572633a4c.png",
     "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.1e699fdad784d87d75f9.png",
     "static/media/password-generator.jpeg": "/react-portfolio/static/media/password-generator.3c6cd64205b491fd53a8.jpeg",
     "index.html": "/react-portfolio/index.html",
-    "main.92e6415b.css.map": "/react-portfolio/static/css/main.92e6415b.css.map",
-    "main.0e15d92d.js.map": "/react-portfolio/static/js/main.0e15d92d.js.map",
+    "main.fdbb3d3d.css.map": "/react-portfolio/static/css/main.fdbb3d3d.css.map",
+    "main.2bb43ea2.js.map": "/react-portfolio/static/js/main.2bb43ea2.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92e6415b.css",
-    "static/js/main.0e15d92d.js"
+    "static/css/main.fdbb3d3d.css",
+    "static/js/main.2bb43ea2.js"
   ]
 }
