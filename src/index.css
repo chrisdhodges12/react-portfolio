@@ -1,9 +1,9 @@
 :root {
   --primary-color: #404e4d;
   --secondary-color: #63595c;
-  --tertiary-color: #b8b8ecb6;
+  --tertiary-color: #95a3f4d2;
   --quarternary-color: #569ac7;
-  --quintinary-color: #35aea4d2;
+  --quintinary-color: #67c4bcf7;
 }
 
 /*browser styling*/
@@ -30,7 +30,6 @@ footer {
 }
 
 .header-name {
-  margin: 0.5rem;
   color: var(--quintinary-color);
 }
 
@@ -40,13 +39,12 @@ nav {
 }
 .nav-links {
   display: inline-block;
-  margin: .7rem;
+  margin: .3rem;
   font-size: 1.2rem;
 }
 
 .nav-list {
   display: inline-block;
-  justify-content: space-evenly;
   margin: 5% 0;
 }
 
@@ -69,7 +67,7 @@ nav {
 }
 .avatar {
   border-radius: 20%;
-  max-width: 30%;
+  max-width: 50%;
   height: auto;
   margin-bottom: 3rem;
 }
@@ -113,7 +111,7 @@ nav {
 
 .resume-link {
   color: var(--tertiary-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .resume-link:hover {
