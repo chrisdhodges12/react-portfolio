@@ -51,21 +51,21 @@ function Projects() {
   ];
 
   return (
-    <div className=" text-center">
-      <h2 className="mb-5"> My Portfolio</h2>
-      <div className="d-flex flex-wrap justify-content-between container">
+    <div className=" text-center ">
+      <h1 className="mb-5"> My Portfolio</h1>
+      <div className="d-flex flex-wrap container">
         {project.map((project) => (
-          <Card key={project.name} className="card d-flex col-sm-12 col-md-6 col-lg-4 mb-5 mb-sm-5 mb-md-0">
-            <Card.Body className="card-body">
-              <Card.Title className="card-title">{project.title}</Card.Title>
+          <Card key={project.name} className="card project-cards col-sm-12 col-md-6 col-lg-4 mb-5 mb-sm-5 mb-md-0">
+            <Card.Body className="card-body d-flex flex-column">
+              <Card.Title className="card-title mt-2 mb-2 ">{project.title}</Card.Title>
               <div className="align-center">
-                <Card.Img className="project-image img-fluid mb-3"  src={project.src} />
+                <Card.Img className="project-image mb-3 mt-3"  src={project.src} />
               </div>
-              <Card.Text className="project-text mb-3">{project.description}</Card.Text>
-              <a href={project.github} target="_blank" rel="noreferrer" className="project-github project-link">
-                GitHub Repo
+              <Card.Text className="project-text mb-auto">{project.description}</Card.Text>
+              <a href={project.github} target="_blank" rel="noreferrer" className="mb-3 mt-5 btn btn-secondary">
+                GitHub
               </a>{"   "}
-              <a href={project.deployed} target="_blank" rel="noreferrer" className="project-deployed project-link">
+              <a href={project.deployed} target="_blank" rel="noreferrer" className="mb-0 btn btn-secondary  ">
                 See it in action!
               </a>
             </Card.Body>

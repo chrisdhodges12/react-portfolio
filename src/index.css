@@ -1,9 +1,9 @@
 :root {
   --primary-color: #404e4d;
   --secondary-color: #63595c;
-  --tertiary-color: #646881;
+  --tertiary-color: #b8b8ecb6;
   --quarternary-color: #569ac7;
-  --quintinary-color: #5ebabf;
+  --quintinary-color: #35aea4d2;
 }
 
 /*browser styling*/
@@ -13,6 +13,10 @@
   background-color: var(--primary-color);
   color: var(--quarternary-color);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: var(--tertiary-color);
 }
 
 .main-page {
@@ -27,6 +31,7 @@ footer {
 
 .header-name {
   margin: 0.5rem;
+  color: var(--quintinary-color);
 }
 
 nav {
@@ -58,9 +63,13 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.about-text {
+  color: var(--quintinary-color);
+}
 .avatar {
   border-radius: 20%;
-  max-width: 40%;
+  max-width: 30%;
   height: auto;
   margin-bottom: 3rem;
 }
@@ -82,38 +91,28 @@ nav {
   background-color: #63595c;
 }
 
-.project-card {
-  background-color: var(--quartinary-color);
-  display: flex;
-}
-
-.project-body {
-  background-color: var(--tertiary-color);
-}
-
-.project-title,
-.project-text,
 .project-github,
 .project-deployed {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-bottom: auto;
 }
 
 .project-image {
-  display: flex;
-  max-width: 50%;
-  max-height: 50%;
-  justify-content: center;
-  align-content: space-between;
+  width: 100%;
+  height: 15rem;
 }
-
 .project-link {
   color: var(--quintinary-color);
 }
 
-.resume-link {
+.project-text {
   color: var(--quintinary-color);
+}
+
+.resume-link {
+  color: var(--tertiary-color);
   font-size: 2rem;
 }
 

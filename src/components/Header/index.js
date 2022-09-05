@@ -9,7 +9,7 @@ function Header({ thisPage, handlePage }) {
 
   return (
     <header className="header" id="header">
-      <h2 className='header-name'>Chris Hodges</h2>
+      <h1 className='header-name'>Chris Hodges</h1>
       <nav className='d-flex justify-content-evenly'>
         <ul className="nav-list">
           {pages.map(page => {
