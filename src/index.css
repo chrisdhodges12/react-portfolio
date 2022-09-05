@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #404E4D;
-  --secondary-color: #63595C;
+  --primary-color: #404e4d;
+  --secondary-color: #63595c;
   --tertiary-color: #646881;
   --quarternary-color: #569ac7;
-  --quintinary-color: #5AD2F4;
+  --quintinary-color: #5ebabf;
 }
 
 /*browser styling*/
@@ -12,35 +12,37 @@
   padding: 0rem;
   background-color: var(--primary-color);
   color: var(--quarternary-color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main-page {
   margin: 2rem;
 }
 
-
 footer {
   margin-top: 20vh;
-}
+  border-top: var(--secondary-color) 4px solid;
 
+}
 
 .header-name {
   margin: 0.5rem;
-
 }
 
+nav {
+  border-bottom: var(--secondary-color) 5px solid;
+  margin-bottom: 2rem;
+}
 .nav-links {
-
   display: inline-block;
-  margin: 1rem;
+  margin: .7rem;
+  font-size: 1.2rem;
 }
 
 .nav-list {
   display: inline-block;
   justify-content: space-evenly;
-  margin: 5% 0
-
-
+  margin: 5% 0;
 }
 
 .nav-link-active {
@@ -48,26 +50,27 @@ footer {
 }
 
 .nav-link-active:hover {
-  color: var(--quintinary-color)
-
+  color: var(--quintinary-color);
 }
 
 .about {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 .avatar {
- border-radius: 20%;
- max-width: 40%;
- height: auto;
- margin-bottom: 3rem;
-
+  border-radius: 20%;
+  max-width: 40%;
+  height: auto;
+  margin-bottom: 3rem;
 }
 
 .contact-link {
   color: var(--quintinary-color);
+}
+
+.contact-link:hover {
+  color: var(--quarternary-color)
 }
 
 .submit-btn {
@@ -76,25 +79,26 @@ footer {
 }
 
 .submit-btn:hover {
-  background-color: #63595C;
+  background-color: #63595c;
 }
 
 .project-card {
   background-color: var(--quartinary-color);
-display: flex;
-
+  display: flex;
 }
 
 .project-body {
   background-color: var(--tertiary-color);
 }
 
-.project-title, .project-text, .project-github, .project-deployed {
+.project-title,
+.project-text,
+.project-github,
+.project-deployed {
   display: flex;
   text-align: center;
   justify-content: center;
 }
-
 
 .project-image {
   display: flex;
@@ -105,15 +109,14 @@ display: flex;
 }
 
 .project-link {
-  color: var(--quintinary-color)
+  color: var(--quintinary-color);
 }
 
 .resume-link {
-  color: var(--quintinary-color)
+  color: var(--quintinary-color);
+  font-size: 2rem;
 }
 
-.resume-link:hover { 
+.resume-link:hover {
   color: var(--quarternary-color);
 }
-
-

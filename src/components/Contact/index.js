@@ -36,27 +36,18 @@ function Contact() {
 
 
   return (
-    <section className="">
+    <section className="container">
       <h1 className="d-flex justify-content-center">Contact me</h1>
-      <div>
-        <p className="">Fill out the form below or send me an email at {" "}
+      <div className="d-flex justify-content-center m-3">
+        <p className="m-3">Fill out the form below or send me an email at {" "}
           <a
               className="contact-link"
               href="mailto: chrisdhodges12@gmail.com" target='_blank' rel="noreferrer" >
              chrisdhodges12@gmail.com {" "}
           </a>
         </p>
-        <p className="">
-          You can also find me on GitHub at {" "}
-          <a
-              className="contact-link"
-              href="https://github.com/chrisdhodges12" 
-              target="_blank" rel="noreferrer">
-              github.com/chrisdhodges12
-          </a> {" "}
-        </p>
       </div>
-      <form className="card col-md-6 col-sm-8 d-flex " onSubmit={handleSubmit}>
+      <form className="card m-auto col-md-6 col-sm-9 d-flex " onSubmit={handleSubmit}>
         <div className="card-body d-flex justify-content-end">
           <label className="m-auto" htmlFor="name">Name:</label>
           <br></br>
@@ -79,6 +70,17 @@ function Contact() {
         )}
         <button className=" card-body submit-btn" type="submit">Submit</button>
       </form>
+      <div className="d-flex justify-content-center m-3">
+        <p className="m-5">
+            You can also find me on GitHub at {" "}
+            <a
+                className="contact-link"
+                href="https://github.com/chrisdhodges12" 
+                target="_blank" rel="noreferrer">
+                chrisdhodges12
+            </a>
+          </p>
+      </div>
     </section>
   );
 }

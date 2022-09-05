@@ -14,7 +14,7 @@ function About () {
                         alt="Chris Hodges"
                     ></img>
                 </div>
-                <p className="col-8">
+                <p className="col-4">
                     I built this webpage to showcase my web-development portfolio.
                     I enjoy coding and am always eager to learn more!
                 </p>
