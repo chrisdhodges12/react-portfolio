@@ -1,17 +1,45 @@
 :root {
-  --primary-color: rgba(19, 35, 48, 0.5);
-  --secondary-color: #F28C28;
-  --tertiary-color: #0d1821;
-  --quarternary-color: #fff;
-  --box-shadow-glow: 0 0 5px 5px #fff;
-  --default-margin: 10px;
-  --tile-border: 2px solid ##d6e3f8;
+  --primary-color: #404E4D;
+  --secondary-color: #63595C;
+  --tertiary-color: #646881;
+  --quarternary-color: #62BEC1;
+  --quintinary-color: #5AD2F4;
 }
 
 /*browser styling*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: .1rem;
+  padding: .1rem;
   scroll-behavior: smooth;
+  background-color: var(--primary-color);
 }
+
+.project-card {
+  background-color: var(--quartinary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-body {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--tertiary-color);
+}
+
+.project-title, .project-text, .project-github, .project-deployed {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.project-image {
+  display: flex;
+  max-width: 50%;
+  max-height: 50%;
+  justify-content: center;
+  align-content: space-between;
+}
+
