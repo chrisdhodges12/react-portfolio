@@ -5,6 +5,13 @@ import Card from "react-bootstrap/Card";
 function Projects() {
   const project = [
     {
+      title: "Resume Builder",
+      description: "The Bootcamp's final project: Build your resume!",
+      github: "https://github.com/chrisdhodges12/resume-builder",
+      deployed: "https://salty-wildwood-94158.herokuapp.com/",
+      src: require("../../assets/project-images/resumeBuilder.png"),
+    },
+    {
       title: "Travel Size",
       description: "A blog to help you find where to travel!",
       github: "https://github.com/chrisdhodges12/Travel-Size-",
